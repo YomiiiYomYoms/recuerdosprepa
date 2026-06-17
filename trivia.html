@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia chafa🎮</title>
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+      margin: 0;
+      background-color: #72c3a7;
+      text-align: center;
+      padding: 20px;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    nav {
+      background-color: #454fc0;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .question {
+      margin: 20px auto;
+      background: #00fbee;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #454fc0;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>🎮Test</h1>
+  </header>
+
+  <nav>
+    <a href="fotos.html">Fotos</a>
+    <a href="disculpas.html">Disculpas</a>
+    <a href="cartas.html">Cartas</a>
+    <a href="cancion.html">Canciones</a>
+    <a href="memes.html">Memes</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <section>
+    <h2>¿Qué tanto recuerdas del grupo Los Más Capitos?</h2>
+
+    <div class="question">
+      <p>¿Quién dio la idea de jugar Overwatch?</p>
+      <button onclick="checkAnswer(this, true)">Aldo</button>
+      <button onclick="checkAnswer(this, false)">Ramos</button>
+      <button onclick="checkAnswer(this, false)">Kike</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Cuál fue el meme más icónico del grupo?</p>
+      <button onclick="checkAnswer(this, false)">El gender swamp</button>
+      <button onclick="checkAnswer(this, true)">Kike en general</button>
+      <button onclick="checkAnswer(this, false)">Aldo vs Zarate</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Qué juego jugábamos más seguido?</p>
+      <button onclick="checkAnswer(this, false)">Fortnite</button>
+      <button onclick="checkAnswer(this, true)">Overwatch</button>
+      <button onclick="checkAnswer(this, false)">Minecraft</button>
+      <button onclick="checkAnswer(this, false)">Roblox</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Quién creo el server de minecraft?</p>
+      <button onclick="checkAnswer(this, true)">Aldo</button>
+      <button onclick="checkAnswer(this, false)">Polo</button>
+      <button onclick="checkAnswer(this, false)">Leo</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Quién no se unia a las llamadas hasta que cambiamos de juego?</p>
+      <button onclick="checkAnswer(this, true)">Aldo</button>
+      <button onclick="checkAnswer(this, false)">Leo</button>
+      <button onclick="checkAnswer(this, false)">Polo</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Quién se une 1 vez al año?</p>
+      <button onclick="checkAnswer(this, true)">Leo</button>
+      <button onclick="checkAnswer(this, false)">Ramos</button>
+      <button onclick="checkAnswer(this, false)">Polo</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Antes de ser "Los más capitos" el nombre del grupo era?</p>
+      <button onclick="checkAnswer(this, true)">Realm maincra</button>
+      <button onclick="checkAnswer(this, false)">Puro vivorear gente</button>
+      <button onclick="checkAnswer(this, false)">Lobos solitarios</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿A qué hora eran las llamadas?</p>
+      <button onclick="checkAnswer(this, true)">9:00-9:30</button>
+      <button onclick="checkAnswer(this, false)">6:00</button>
+      <button onclick="checkAnswer(this, true)">No hay hora</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Quién es él más puntual?</p>
+      <button onclick="checkAnswer(this, true)">Ramos</button>
+      <button onclick="checkAnswer(this, false)">Yoss</button>
+      <button onclick="checkAnswer(this, false)">Aldo</button>
+      <button onclick="checkAnswer(this, true)">Kike</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Quién es él menos puntual?</p>
+      <button onclick="checkAnswer(this, true)">Aldo</button>
+      <button onclick="checkAnswer(this, true)">Yoss</button>
+      <button onclick="checkAnswer(this, true)">Leo</button>
+      <button onclick="checkAnswer(this, true)">Polo</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿Quién inicio el gender swamp?</p>
+      <button onclick="checkAnswer(this, false)">Leo</button>
+      <button onclick="checkAnswer(this, true)">Yoss</button>
+      <button onclick="checkAnswer(this, false)">Polo</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿En una pelea con Siles gana...?</p>
+      <button onclick="checkAnswer(this, false)">Aldo</button>
+      <button onclick="checkAnswer(this, false)">Polo</button>
+      <button onclick="checkAnswer(this, true)">Leo</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿A quién era más común ver en el serverl?</p>
+      <button onclick="checkAnswer(this, false)">Leo</button>
+      <button onclick="checkAnswer(this, true)">Yoss</button>
+      <button onclick="checkAnswer(this, true)">Kike</button>
+      <button onclick="checkAnswer(this, true)">Ramos</button>
+      <div class="result"></div>
+    </div>
+
+    <div class="question">
+      <p>¿La persona más alcoholica?</p>
+      <button onclick="checkAnswer(this, false)">Aldo</button>
+      <button onclick="checkAnswer(this, true)">Yoss</button>
+      <button onclick="checkAnswer(this, true)">Kike</button>
+      <button onclick="checkAnswer(this, false)">Leo</button>
+      <button onclick="checkAnswer(this, false)">Polo</button>
+      <button onclick="checkAnswer(this, false)">Ramos</button>
+      <div class="result"></div>
+    </div>
+  </section>
+
+  <script>
+    function checkAnswer(button, correct) {
+      const resultDiv = button.parentElement.querySelector(".result");
+      if (correct) {
+        resultDiv.textContent = "✅ ¡Correcto!";
+        resultDiv.style.color = "green";
+      } else {
+        resultDiv.textContent = "❌ Incorrecto";
+        resultDiv.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>

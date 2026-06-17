@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asocial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #72c3a7;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    #contenido {
+      display: none;
+      margin-top: 20px;
+      background: #842c2c;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #454fc0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>💌</h1>
+  </header>
+
+  <p>Introduce la contraseña para leer tu carta:</p>
+  <input type="password" id="clave">
+  <button onclick="verCarta()">Acceder</button>
+
+  <div id="contenido">
+    <h2>Aldo:</h2>
+    <p>Sé que ya no somos amigos, y que fue una decisión de ambos. Sé también que tú no tenías problema con que yo volviera, pero mi mayor conflicto era que ya no podría hablarte a ti. Si no hubiera sido por ti y por Leo, probablemente me habría quedado sola. Tú fuiste mi mejor amigo, aunque nunca lo quise admitir por miedo a que no fuera recíproco.
+    Eres una persona increíble, Aldo. Soportaste mis actitudes, estuviste conmigo en las malas y en las buenas, y aunque yo no supe cuidar nuestra amistad, siempre me diste lo mejor de ti. Me arrepiento mucho de no haber podido salvar lo que teníamos, porque sé que fue mi culpa.
+    Hoy no te escribo con la intención de que me disculpes, ni de que volvamos a ser amigos como antes, ni de victimizarme o culparte. Esta vez quiero que mis palabras sean sinceras: perdóname de corazón. Perdóname por actuar como una niña, por ser grosera y después escudarme diciendo que tenía un mal día. Perdóname por alejarme cuando intentabas resolver las cosas, por aplicar la “ley del hielo” cuando no lo merecías.
+    Me hubiera gustado que vieras mi cambio como persona. No sé cuándo sucederá, pero esta vez sí me esforzaré por no perder a las personas que me importan, como tú. Porque aunque ya no estemos juntos como antes, siempre voy a recordarte como mi mejor amigo, alguien que me enseñó lo que significa la paciencia, la lealtad y la verdadera amistad.
+    Te deseo lo mejor en todo lo que hagas. Sé que puedes con cualquier proyecto y con cualquier meta que te propongas, porque siempre tuviste esa fuerza y esa determinación que yo admiraba. Con respecto a lo que escribiste en mi playera, espero que algún día se cumpla: que puedas disculparme y que podamos ser amigos, tal vez no como antes, pero sí de una manera nueva y sincera.
+    De verdad, Aldo, gracias por todo lo que fuiste para mí. Te deseo éxito, felicidad y que cada sueño que tengas se convierta en realidad.
+    Con cariño y gratitud,
+    Yoss 💓</p>
+  </div>
+
+  <script>
+    function verCarta() {
+      const clave = document.getElementById("clave").value;
+      if (clave === "humilde") { 
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta 😿");
+      }
+    }
+  </script>
+</body>
+</html>

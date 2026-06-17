@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blanco privilegiado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #72c3a7;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    #contenido {
+      display: none;
+      margin-top: 20px;
+      background: #83c9ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #454fc0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>💌</h1>
+  </header>
+
+  <p>Introduce la contraseña para leer tu carta:</p>
+  <input type="password" id="clave">
+  <button onclick="verCarta()">Acceder</button>
+
+  <div id="contenido">
+    <h2>Oyem Leo:</h2>
+    <p>Creo que ya lo sabes, pero quiero dejarlo escrito: el hecho de que hoy tengamos este grupo, de que exista lo que somos, es gracias a ti. Tú fuiste quien me habló cuando me viste sola, quien me dio un lugar cuando más lo necesitaba, quien me escuchaba con paciencia y también compartía sus propias palabras conmigo. Poco a poco los demás fueron llegando, pero estoy convencida de que no seríamos quienes somos ahora si no hubiera sido por ti. Tú fuiste el inicio, el corazón que dio vida a todo esto, y no sabes cuánto te lo agradezco. Estoy segura de que los demás también lo sienten así.
+    No quiero que esta carta sea solo un recuerdo, sino también un reconocimiento. Porque tu amistad ha sido un regalo enorme para mí. Me diste confianza, compañía y momentos que siempre voy a guardar con cariño. Espero que nunca me olvides, porque yo jamás me olvidaré de ti. Para mí eres uno de mis mejores amigos, alguien que marcó mi vida en la prepa y que me enseñó lo valioso que es tener a alguien que te tiende la mano cuando más lo necesitas.
+    Gracias por ser tú, por tu forma de unirnos, por tu manera de hacer que todos nos sintiéramos parte de algo especial. Gracias por tu amistad sincera, por tu apoyo constante y por demostrarme que incluso los gestos más simples pueden cambiarlo todo.
+    Con mucho cariño y gratitud,
+    Yoss 💓</p>
+  </div>
+
+  <script>
+    function verCarta() {
+      const clave = document.getElementById("clave").value;
+      if (clave === "ff") { 
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta 😿");
+      }
+    }
+  </script>
+</body>
+</html>

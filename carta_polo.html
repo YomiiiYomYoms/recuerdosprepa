@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bautista</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #72c3a7;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    #contenido {
+      display: none;
+      margin-top: 20px;
+      background: #fdffb8;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #454fc0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>💌</h1>
+  </header>
+
+  <p>Introduce la contraseña para leer tu carta:</p>
+  <input type="password" id="clave">
+  <button onclick="verCarta()">Acceder</button>
+
+  <div id="contenido">
+    <h2>Holiiim Polo:</h2>
+    <p>Quiero agradecerte de corazón por no dejarme sola en ningún momento. A pesar de las peleas y los malos ratos, siempre estuviste ahí, felicitándome en los momentos importantes y recordándome que contaba contigo. Incluso en los días más simples, cuando me invitabas a jugar o aceptabas mis invitaciones, me hacías sentir acompañada y querida.
+    Me divertía mucho ayudarte en las tareas y trabajos, aunque a veces me quejara (y tú lo sabes bien). Esos momentos se convirtieron en recuerdos que ahora valoro muchísimo.
+    Estoy convencida de que ambos estamos el uno para el otro, y espero que así sea por muchísimo más tiempo. Sí, lo digo en serio… amenazo con mi presencia muejeje. Porque sé que, aunque la vida cambie y cada uno siga su camino, siempre habrá un lazo que nos mantenga unidos.
+    Espero que me recuerdes con la misma fuerza con la que yo te voy a recordar. No solo como alguien que estuvo en tu vida, sino como tu “besto frendo” de la prepa, esa persona que compartió contigo risas, desvelos, bromas y hasta discusiones, pero que nunca dejó de apreciarte.
+    Gracias por ser parte de mi historia, por enseñarme lo que significa la amistad verdadera y por demostrarme que incluso en los momentos difíciles, siempre hay alguien dispuesto a estar ahí.
+    Con cariño infinito,
+    Yoss 💓</p>
+  </div>
+
+  <script>
+    function verCarta() {
+      const clave = document.getElementById("clave").value;
+      if (clave === "leonskennedy") { 
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta 😿");
+      }
+    }
+  </script>
+</body>
+</html>
