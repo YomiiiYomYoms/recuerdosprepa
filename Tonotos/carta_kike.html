@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Migajero</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #72c3a7;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    #contenido {
+      display: none;
+      margin-top: 20px;
+      background: #54fc5f;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #454fc0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>💌</h1>
+  </header>
+
+  <p>Introduce la contraseña para leer tu carta:</p>
+  <input type="password" id="clave">
+  <button onclick="verCarta()">Acceder</button>
+
+  <div id="contenido">
+    <h2>Kike:</h2>
+    <p>No tengo palabras suficientes para agradecerte todos los momentos en los que estuviste para mí. Siempre aparecías en cada crisis, en cada risa, en cada llanto… y lo más valioso es que nunca me juzgaste, solo querías ayudar. Esa forma tuya de estar presente, de escuchar sin condiciones, me hizo sentir acompañada en los días más difíciles y también en los más alegres.
+    Al igual que los demás, eres de mis mejores amigos, y aunque mis actitudes no siempre fueron las mejores y las cosas han cambiado con el tiempo, tú sigues aquí. Eso significa más de lo que puedo expresar. Tu constancia y tu paciencia me han enseñado lo que realmente significa la amistad.
+    Eres un amigo genial, no solo por los momentos en los que me dijiste que era buena amiga, sino también por esos instantes en los que me pedías consejos o me dabas los tuyos, y por la manera en que escuchabas atentamente cada palabra. Esa reciprocidad, ese dar y recibir, es lo que hace que nuestra amistad sea tan especial.
+    De verdad, gracias. Estoy feliz de que después de tantas “migajas” ahora tengas tu milanesa completa (bromita se que eres feliz con Liz y no sabes cuanto me alegra, de verdad les deseo lo mejor a ambos). Porque más allá de las bromas, lo que quiero que quede claro es que tu presencia en mi vida ha sido un regalo enorme.
+    Espero que esta carta sea un recordatorio de lo mucho que te valoro y de lo agradecida que estoy por todo lo que hemos compartido. Pase lo que pase, siempre voy a guardar un lugar para ti en mis recuerdos y en mi corazón.
+    Con cariño y un poco de hate,
+    Yoss 💓</p>
+  </div>
+
+  <script>
+    function verCarta() {
+      const clave = document.getElementById("clave").value;
+      if (clave === "milanesa") { 
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta 😿");
+      }
+    }
+  </script>
+</body>
+</html>

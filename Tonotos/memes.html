@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Memerengues de internet</title>
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+      margin: 0;
+      background-color: #72c3a7;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    nav {
+      background-color: #454fc0;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 600px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #222;
+    }
+    .buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .buttons button {
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .buttons button:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>Chistarracos</h1>
+  </header>
+
+  <nav>
+    <a href="fotos.html">Fotos</a>
+    <a href="disculpas.html">Disculpas</a>
+    <a href="cartas.html">Cartas</a>
+    <a href="cancion.html">Canciones</a>
+    <a href="memes.html">Memes</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <section>
+    <h2>Nuestros memes insanos</h2>
+
+    <div class="slider">
+  <div class="slides" id="slides">
+    <div class="slide">
+      <img src="meme1.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">No era gracioso pero nos recordaba a alguien.</p>
+    </div>
+    <div class="slide">
+      <img src="meme2.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">No sé ni pq m dio risa 😿</p>
+    </div>
+    <div class="slide">
+      <img src="meme3.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">La descripción del grupo</p>
+    </div>
+    <div class="slide">
+      <img src="meme4.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">La imagen rara q tenía Ramos</p>
+    </div>
+    <div class="slide">
+      <img src="meme5.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">Le empezaron a decir Yelti a Kike</p>
+    </div>
+    <div class="slide">
+      <img src="meme6.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">La imagen del server</p>
+    </div>
+    <div class="slide">
+      <img src="meme7.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">El gender swamp</p>
+    </div>
+    <div class="slide">
+      <img src="meme8.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">Quién es ese hombre ⁉️</p>
+    </div>
+    <div class="slide">
+      <img src="meme9.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">fukin Kike infiel</p>
+    </div>
+    <div class="slide">
+      <img src="meme10.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">Señoraa? 😦</p>
+    </div>
+    <div class="slide">
+      <img src="meme11.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">Las noches de Overwatch 🥀</p>
+    </div>
+    <div class="slide">
+      <img src="meme12.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">Me pregunto de qn sera el número...</p>
+    </div>
+    <div class="slide">
+      <img src="meme13.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">Puro conocedor sabe lo de esta foto</p>
+    </div>
+    <div class="slide">
+      <img src="memes14.jpg.jpeg" alt="Meme gracioso">
+      <p class="caption">El mejor meme de todos, diría yo 😝</p>
+    </div>
+  </div>
+  <div class="buttons">
+    <button onclick="prevSlide()">⟨</button>
+    <button onclick="nextSlide()">⟩</button>
+  </div>
+</div>
+  <script>
+    let index = 0;
+    const slides = document.getElementById("slides");
+    const total = slides.children.length;
+
+    function showSlide() {
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % total;
+      showSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + total) % total;
+      showSlide();
+    }
+
+    setInterval(nextSlide, 4000);
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>💓Fotitos</title>
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+      margin: 0;
+      background-color: #72c3a7;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    nav {
+      background-color: #454fc0;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    .slider {
+      position: relative;
+      max-width: 600px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .caption {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #222;
+    }
+    .buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .buttons button {
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .buttons button:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>Enfocados</h1>
+  </header>
+
+  <nav>
+    <a href="fotos.html">Fotos</a>
+    <a href="disculpas.html">Disculpas</a>
+    <a href="cartas.html">Cartas</a>
+    <a href="cancion.html">Canciones</a>
+    <a href="memes.html">Memes</a>
+  </nav>
+
+  <section id="fotos">
+    <h2>Desenfocados 📸</h2>
+
+    <div class="slider">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img src="amigos1.jpg.jpeg" alt="Recuerdo 1">
+          <p class="caption">Esto fue el comienzo 💓.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos2.jpg.jpeg" alt="Recuerdo 2">
+          <p class="caption">Poco a poco empezó la confianza.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos3.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Decidí ser yo misma.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos4.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Los invite a jugar.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos5.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Me senti aceptada.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos6.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Demasiada confianza jaja.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos7.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Hubo convivios.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos8.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Gente extrovertida.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos9.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Nos divertimos.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos10.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Dejamos de ser 3 para ser 6 💫.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos11.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Fueron a mi cumple y gracias por eso ❣️.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos12.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Me dieron un lugar para ser yo.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos13.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Estar juntos se volvio costumbre.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos14.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Hacer cualquier tontería también.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos15.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Y, ¿por qué no?, saltarse una q otra clase igual.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos16.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Primera salida oficial como amigos💞.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos17.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Chimeneaaa.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos18.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Caballero hace lo suyo y se va.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos19.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Por alguna razón siguieron mis tonteras.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos20.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Yo también segui las suyas.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos21.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Cada día era más divertido y solo por ustedes.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos22.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Caminito de la escuela 🍃.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos23.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Solo estar con ustedes para mí fue felicidad.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos24.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">No me gusta el basquet pero era divertido verlos.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos25.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Hubo momentos iconic 💫.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos26.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Hubo momentos random 🙊.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos27.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Bastante random JAJAJA.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos28.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Como la besada del año.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos29.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Sowwy Ramos pero no m resisti.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos30.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Bros🫢?</p>
+        </div>
+        <div class="slide">
+          <img src="amigos31.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Ramos Emo.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos32.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Kike infiel.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos33.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Espero un día nos perdones Ramos.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos34.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">¿Qué onda con esa bota y por qué jugaron furvo con ella?</p>
+        </div>
+        <div class="slide">
+          <img src="amigos35.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Nooo Polo no te dejes.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos36.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Mmmmmm ya; ok, entiendo 😿.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos37.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Tonotos los tqm.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos38.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Cuando fue el servicio.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos39.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">No entendi pq no hicieron pública su relación 💔.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos40.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">¿A quién debería ver?</p>
+        </div>
+        <div class="slide">
+          <img src="amigos41.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Todos geis ni uno hetero.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos42.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">De verdad era muy obvio 🫢.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos43.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">¿Yelti? (no c qn chota es).</p>
+        </div>
+        <div class="slide">
+          <img src="amigos44.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Aldo emo.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos45.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Gracias ❤️‍🩹.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos46.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">No pregunten.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos47.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Yo también para q pregunto si es obvio.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos48.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Fueron mis mejores amigos.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos49.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Creo que los únicos que he tenido .</p>
+        </div>
+        <div class="slide">
+          <img src="amigos50.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Esto fue lo que nos hizo hacer el server ❤️‍🩹.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos51.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Te funaba por tonoto sowwy.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos52.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Zzz.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos53.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">Ya no van a ver mis cambios de look ni escuchar chismes,<br> los voy a extrañar tonotos 💔.</p>
+        </div>
+        <div class="slide">
+          <img src="amigos54.jpg.jpeg" alt="Recuerdo 3">
+          <p class="caption">De verdad, ¿Alguien conoce a esas personas? 😣</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="prevSlide()">⟨</button>
+        <button onclick="nextSlide()">⟩</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById("slides");
+    const total = slides.children.length;
+
+    function showSlide() {
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % total;
+      showSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + total) % total;
+      showSlide();
+    }
+
+    // Avanza automáticamente cada 5 segundos
+    setInterval(nextSlide, 5000);
+  </script>
+</body>
+</html>

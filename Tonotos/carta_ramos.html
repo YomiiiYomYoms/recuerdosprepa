@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tryhard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #72c3a7;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #c286d2;
+      color: rgb(12, 7, 148);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    header a.logo {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+    header a.logo img {
+      width: 100px;
+      height: auto;
+    }
+    #contenido {
+      display: none;
+      margin-top: 20px;
+      background: #e748ff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #454fc0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="milogo.png.jpeg" alt="Mi Logo">
+    </a>
+    <h1>💌</h1>
+  </header>
+
+  <p>Introduce la contraseña para leer tu carta:</p>
+  <input type="password" id="clave">
+  <button onclick="verCarta()">Acceder</button>
+
+  <div id="contenido">
+    <h2>Para el tryhard en fornite:</h2>
+    <p>Manixx, mentira Ramos… se me hace raro decirte así xd.
+    Bueno, por dónde empezar. Al igual que los demás, siempre estuviste para mí a pesar de mis actitudes. Pero creo que tú fuiste quien más se esmeró en enseñarme a jugar y en tenerme paciencia (aunque ni así aprendí, ¿verdad? pero la intención es lo que cuenta). De verdad te agradezco eso, porque me divertía muchísimo jugando con ustedes, ya fuera Fortnite u Overwatch. Esos momentos se convirtieron en recuerdos que siempre voy a guardar con cariño.
+    También me escuchabas atentamente cuando hablaba de cualquiera de mis gustos, ya fueran animes, GI, HSR o cualquier otra cosa que me emocionara. Prestabas atención incluso a los detalles más pequeños, y eso me hacía sentir que podía confiar en ti sin guardarme nada. Esa confianza es algo que valoro muchísimo, porque no siempre es fácil encontrar a alguien que te escuche de verdad.
+    Si alguna vez te hice sentir mal, lo siento mucho. Nunca fue mi intención, y espero que lo sepas. A pesar de todo, quiero que me recuerdes y me consideres tu amiga, tal como yo lo hago contigo. Porque más allá de los videojuegos, las bromas y las pláticas interminables, lo que queda es la amistad sincera que construimos.
+    Con cariño, y siendo una persona mala para los videojuegos (sí, sé que me dejaban ganar, no se hagan weis, y les agradezco eso),
+    Yoss 💓</p>
+  </div>
+
+  <script>
+    function verCarta() {
+      const clave = document.getElementById("clave").value;
+      if (clave === "calajoelajo") { 
+        document.getElementById("contenido").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta 😿");
+      }
+    }
+  </script>
+</body>
+</html>
